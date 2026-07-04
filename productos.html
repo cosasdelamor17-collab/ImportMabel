@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos — Laptops, PC y Accesorios | Importaciones Mabel</title>
+  <meta name="description" content="Catálogo de laptops, computadoras de escritorio, all-in-one y accesorios en Lima." />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="min-h-screen flex flex-col">
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.php" class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="logo-text">
+          <div class="logo-text-top">IMPORTACIONES MABEL</div>
+          <div class="logo-text-bottom">E.I.R.L.</div>
+        </div>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.php">Inicio</a>
+        <a href="vision-mision.php">Visión y Misión</a>
+        <a href="productos.php">Productos</a>
+        <a href="contacto.php">Contacto</a>
+        <a href="ubicacion.php">Ubicación</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="Menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="close-icon" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <div class="mobile-nav-inner">
+        <a href="index.php">Inicio</a>
+        <a href="vision-mision.php">Visión y Misión</a>
+        <a href="productos.php">Productos</a>
+        <a href="contacto.php">Contacto</a>
+        <a href="ubicacion.php">Ubicación</a>
+      </div>
+    </div>
+  </header>
+  <main class="flex-1">
+    <section class="gradient-hero page-hero" style="background: var(--gradient-hero); color: var(--primary-fg); padding: 5rem 0;">
+      <div class="container">
+        <p class="page-hero-sub" style="color: var(--brand);">Catálogo</p>
+        <h1 class="page-hero-title">Nuestros Productos</h1>
+        <p class="page-hero-desc">Laptops, computadoras de escritorio, all-in-one y accesorios de las marcas más reconocidas.</p>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="container">
+        <div class="categories">
+          <button class="cat-btn active" data-category="Todos">Todos</button>
+          <button class="cat-btn" data-category="Laptop">Laptop</button>
+          <button class="cat-btn" data-category="Gamer">Gamer</button>
+          <button class="cat-btn" data-category="Desktop">Desktop</button>
+          <button class="cat-btn" data-category="AIO">AIO</button>
+          <button class="cat-btn" data-category="Accesorio">Accesorio</button>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-tags="Laptop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Laptop</span>
+              <img src="images/prod-laptop1.jpg" alt="Ultrabook Pro 14" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Ultrabook Pro 14"</h3>
+              <p class="product-specs">Intel Core i7 · 16GB RAM · 512GB SSD</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 3,299</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Gamer">
+            <div class="product-img-wrap">
+              <span class="product-tag">Gamer</span>
+              <img src="images/prod-laptop2.jpg" alt="Laptop Gamer RTX 4060" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Laptop Gamer RTX 4060</h3>
+              <p class="product-specs">Ryzen 7 · 32GB · RTX 4060 · 1TB SSD</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 5,899</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Desktop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Desktop</span>
+              <img src="images/prod-desktop1.jpg" alt="PC Escritorio Home" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">PC Escritorio Home</h3>
+              <p class="product-specs">Core i5 · 16GB · 512GB SSD · Win 11</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 2,499</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="AIO">
+            <div class="product-img-wrap">
+              <span class="product-tag">AIO</span>
+              <img src="images/prod-aio.jpg" alt="All-in-One 24 FHD" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">All-in-One 24" FHD</h3>
+              <p class="product-specs">Core i5 · 8GB · 256GB SSD · Pantalla FHD</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 2,899</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Laptop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Laptop</span>
+              <img src="images/Laptop Empresarial 15.jpg" alt="Laptop Empresarial 15" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Laptop Empresarial 15"</h3>
+              <p class="product-specs">Core i5 · 8GB · 256GB SSD</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 2,199</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Gamer">
+            <div class="product-img-wrap">
+              <span class="product-tag">Gamer</span>
+              <img src="images/Laptop Creator 16.jpg" alt="Laptop Creator 16" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Laptop Creator 16"</h3>
+              <p class="product-specs">Core i9 · 32GB · RTX 4070</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 7,499</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Desktop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Desktop</span>
+              <img src="images/PC Workstation Pro.png" alt="PC Workstation Pro" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">PC Workstation Pro</h3>
+              <p class="product-specs">Core i7 · 32GB · 1TB SSD · RTX A2000</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 6,299</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="AIO">
+            <div class="product-img-wrap">
+              <span class="product-tag">AIO</span>
+              <img src="images/All-in-One 27.png" alt="All-in-One 27 2K" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">All-in-One 27" 2K</h3>
+              <p class="product-specs">Core i7 · 16GB · 512GB SSD · 2K</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 4,199</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Laptop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Laptop</span>
+              <img src="images/Laptop Convertible 14.jpg" alt="Laptop Convertible 14" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Laptop Convertible 14"</h3>
+              <p class="product-specs">Core i5 · 8GB · 256GB SSD · Touch</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 2,599</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Gamer">
+            <div class="product-img-wrap">
+              <span class="product-tag">Gamer</span>
+              <img src="images/Laptop Gaming Ultra.jpg" alt="Laptop Gaming Ultra" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Laptop Gaming Ultra</h3>
+              <p class="product-specs">Ryzen 9 · 64GB · RTX 4080</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 9,999</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Desktop">
+            <div class="product-img-wrap">
+              <span class="product-tag">Desktop</span>
+              <img src="images/PC Compacta Mini.jpg" alt="PC Compacta Mini" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">PC Compacta Mini</h3>
+              <p class="product-specs">Core i3 · 8GB · 256GB SSD</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 1,899</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="AIO">
+            <div class="product-img-wrap">
+              <span class="product-tag">AIO</span>
+              <img src="images/All-in-One Touchscreen.jpg" alt="All-in-One Touchscreen" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">All-in-One Touchscreen</h3>
+              <p class="product-specs">Core i5 · 16GB · 512GB SSD · Touch</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 3,799</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card" data-tags="Accesorio">
+            <div class="product-img-wrap">
+              <span class="product-tag">Accesorio</span>
+              <img src="images/Monitor Curvo 27.JPG" alt="Monitor Curvo 27" loading="lazy" width="800" height="800" class="product-img" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Monitor Curvo 27"</h3>
+              <p class="product-specs">144Hz · 1ms · FreeSync</p>
+              <div class="product-bottom">
+                <span class="product-price text-brand">S/ 1,299</span>
+                <button class="product-btn">Cotizar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">
+          <div class="footer-brand-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="font-display font-bold">IMPORTACIONES MABEL E.I.R.L.</div>
+        </div>
+        <p class="footer-desc">Venta de computadoras, laptops y accesorios tecnológicos de las mejores marcas.</p>
+      </div>
+      <div class="footer-contact">
+        <h4 class="footer-heading">Contacto</h4>
+        <p class="footer-contact-item">Jr. Leticia Nro. 948 Int. 5, Urb. Barrios Altos, Lima</p>
+        <p class="footer-contact-item center-items">(051) 981 412 732</p>
+        <p class="footer-contact-item center-items">ventas@importacionesmabel.pe</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Horario</h4>
+        <p class="footer-desc">Lunes a Sábado</p>
+        <p class="footer-desc">9:00 a.m. — 8:00 p.m.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Importaciones Mabel E.I.R.L. — Todos los derechos reservados.</div>
+  </footer>
+</div>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
