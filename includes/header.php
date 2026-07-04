@@ -19,7 +19,7 @@
 <div class="min-h-screen flex flex-col">
   <header class="header">
     <div class="header-inner">
-      <a href="index.php" class="logo">
+      <a href="index.html" class="logo">
         <div class="logo-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
@@ -29,11 +29,11 @@
         </div>
       </a>
       <nav class="nav-desktop">
-        <a href="index.php">Inicio</a>
-        <a href="vision-mision.php">Visión y Misión</a>
-        <a href="productos.php">Productos</a>
-        <a href="contacto.php">Contacto</a>
-        <a href="ubicacion.php">Ubicación</a>
+        <a href="index.html">Inicio</a>
+        <a href="vision-mision.html">Visión y Misión</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="ubicacion.html">Ubicación</a>
       </nav>
       <button class="menu-btn" id="menu-btn" aria-label="Menú">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -42,11 +42,11 @@
     </div>
     <div class="mobile-nav" id="mobile-nav">
       <div class="mobile-nav-inner">
-        <a href="index.php">Inicio</a>
-        <a href="vision-mision.php">Visión y Misión</a>
-        <a href="productos.php">Productos</a>
-        <a href="contacto.php">Contacto</a>
-        <a href="ubicacion.php">Ubicación</a>
+        <a href="index.html">Inicio</a>
+        <a href="vision-mision.html">Visión y Misión</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="ubicacion.html">Ubicación</a>
       </div>
     </div>
   </header>

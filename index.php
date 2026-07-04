@@ -40,8 +40,8 @@ include 'includes/header.php';
           <h1 class="carousel-title"><?php echo $s['title']; ?></h1>
           <p class="carousel-desc"><?php echo $s['desc']; ?></p>
           <div class="carousel-actions">
-            <a href="productos.php" class="btn btn-brand">Ver catálogo</a>
-            <a href="contacto.php" class="btn btn-outline">Contáctanos</a>
+            <a href="productos.html" class="btn btn-brand">Ver catálogo</a>
+            <a href="contacto.html" class="btn btn-outline">Contáctanos</a>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ $heroOffice = 'images/hero-office.jpg';
         <p class="text-brand text-sm font-semibold tracking-widest uppercase mb-2">Destacados</p>
         <h2 class="text-4xl md:text-5xl font-display font-bold text-primary-fg">Equipos más vendidos</h2>
       </div>
-      <a href="productos.php" class="inline-flex items-center gap-2 font-semibold text-primary-fg hover:text-brand transition-colors">
+      <a href="productos.html" class="inline-flex items-center gap-2 font-semibold text-primary-fg hover:text-brand transition-colors">
         Ver todos
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
@@ -126,7 +126,7 @@ $heroOffice = 'images/hero-office.jpg';
             <h3 class="font-display font-semibold"><?php echo $p['name']; ?></h3>
             <p class="text-brand font-bold text-lg"><?php echo $p['price']; ?></p>
           </div>
-          <a href="productos.php" class="text-sm font-semibold hover:text-brand transition-colors">Detalle</a>
+          <a href="productos.html" class="text-sm font-semibold hover:text-brand transition-colors">Detalle</a>
         </div>
       </div>
       <?php endforeach; ?>
@@ -140,7 +140,7 @@ $heroOffice = 'images/hero-office.jpg';
     <div class="cta-card">
       <h2 class="cta-title">¿Necesitas asesoría para elegir tu equipo?</h2>
       <p class="cta-text">Nuestro equipo te ayuda a encontrar la computadora ideal según tu presupuesto y necesidades.</p>
-      <a href="contacto.php" class="btn btn-brand">Escríbenos ahora</a>
+      <a href="contacto.html" class="btn btn-brand">Escríbenos ahora</a>
     </div>
   </div>
 </section>
