@@ -27,40 +27,41 @@ $products = [
 ];
 
 $categories = ['Todos', 'Laptop', 'Gamer', 'Desktop', 'AIO', 'Accesorio'];
-$heroOffice = 'images/hero-office.jpg';
 ?>
 
-<section class="gradient-hero page-hero" style="background: var(--gradient-hero); color: var(--primary-fg); padding: 5rem 0;">
+<section class="page-hero">
   <div class="container">
-    <p class="page-hero-sub" style="color: var(--brand);">Catálogo</p>
-    <h1 class="page-hero-title">Nuestros Productos</h1>
-    <p class="page-hero-desc">Laptops, computadoras de escritorio, all-in-one y accesorios de las marcas más reconocidas.</p>
+    <p class="page-hero-sub" data-aos="fade-down">Catálogo</p>
+    <h1 class="page-hero-title" data-aos="fade-up">Nuestros <span class="gradient-text">Productos</span></h1>
+    <p class="page-hero-desc" data-aos="fade-up" data-aos-delay="100">Laptops, computadoras de escritorio, all-in-one y accesorios de las marcas más reconocidas.</p>
   </div>
 </section>
 
-<section class="py-16">
+<section class="py-5">
   <div class="container">
-    <div class="categories">
+    <div class="categories" data-aos="fade-up">
       <?php foreach ($categories as $c): ?>
         <button class="cat-btn <?php echo $c === 'Todos' ? 'active' : ''; ?>" data-category="<?php echo $c; ?>"><?php echo $c; ?></button>
       <?php endforeach; ?>
     </div>
-    <div class="product-grid">
-      <?php foreach ($products as $p): ?>
-      <article class="product-card" data-tags="<?php echo $p['tag']; ?>">
-        <div class="product-img-wrap">
-          <span class="product-tag"><?php echo $p['tag']; ?></span>
-          <img src="<?php echo $p['img']; ?>" alt="<?php echo $p['name']; ?>" loading="lazy" width="800" height="800" class="product-img" />
+    <div class="row g-4 product-grid">
+      <?php foreach ($products as $i => $p): ?>
+        <div class="col-sm-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="<?php echo ($i % 8) * 80; ?>">
+          <article class="card border rounded-4 shadow-sm h-100 product-card" data-tags="<?php echo $p['tag']; ?>">
+            <div class="position-relative overflow-hidden" style="aspect-ratio: 1;">
+              <span class="product-tag"><?php echo $p['tag']; ?></span>
+              <img src="<?php echo $p['img']; ?>" alt="<?php echo $p['name']; ?>" loading="lazy" class="card-img-top" />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="font-display fw-semibold fs-6 mb-1"><?php echo $p['name']; ?></h3>
+              <p class="small text-secondary mb-3 flex-grow-1"><?php echo $p['specs']; ?></p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="text-brand fw-bold fs-5"><?php echo $p['price']; ?></span>
+                <button class="btn btn-dark btn-sm rounded-pill px-3">Cotizar</button>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="product-info">
-          <h3 class="product-name"><?php echo $p['name']; ?></h3>
-          <p class="product-specs"><?php echo $p['specs']; ?></p>
-          <div class="product-bottom">
-            <span class="product-price text-brand"><?php echo $p['price']; ?></span>
-            <button class="product-btn">Cotizar</button>
-          </div>
-        </div>
-      </article>
       <?php endforeach; ?>
     </div>
   </div>

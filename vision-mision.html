@@ -5,140 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Visión y Misión — Importaciones Mabel E.I.R.L.</title>
   <meta name="description" content="Conoce la visión, misión y valores de Importaciones Mabel E.I.R.L., empresa peruana dedicada a la venta de tecnología." />
+  <meta property="og:title" content="Visión y Misión — Importaciones Mabel" />
+  <meta property="og:description" content="Nuestra visión, misión y valores." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<div class="min-h-screen flex flex-col">
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+<div class="theme-wrapper min-vh-100 d-flex flex-column">
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="lh-1">
+            <div class="logo-text-top">IMPORTACIONES MABEL</div>
+            <div class="logo-text-bottom">E.I.R.L.</div>
+          </div>
+        </a>
+        <div class="d-flex align-items-center gap-2">
+          <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
         </div>
-        <div class="logo-text">
-          <div class="logo-text-top">IMPORTACIONES MABEL</div>
-          <div class="logo-text-bottom">E.I.R.L.</div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="vision-mision.html">Visión y Misión</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+          </ul>
         </div>
-      </a>
-      <nav class="nav-desktop">
-        <a href="index.html">Inicio</a>
-        <a href="vision-mision.html">Visión y Misión</a>
-        <a href="productos.html">Productos</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="ubicacion.html">Ubicación</a>
-      </nav>
-      <button class="menu-btn" id="menu-btn" aria-label="Menú">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu-icon"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="close-icon" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mobile-nav" id="mobile-nav">
-      <div class="mobile-nav-inner">
-        <a href="index.html">Inicio</a>
-        <a href="vision-mision.html">Visión y Misión</a>
-        <a href="productos.html">Productos</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="ubicacion.html">Ubicación</a>
       </div>
-    </div>
+    </nav>
   </header>
-  <main class="flex-1">
-    <section class="gradient-hero page-hero" style="background: var(--gradient-hero); padding: 6rem 0;">
+  <main class="flex-grow-1">
+    <section class="page-hero" style="padding: 6rem 0;">
       <div class="container text-center" style="max-width: 64rem;">
-        <p class="page-hero-sub" style="color: var(--brand);">Quiénes somos</p>
-        <h1 class="page-hero-title">Visión y Misión</h1>
-        <p class="page-hero-desc" style="margin: 0 auto;">Somos una empresa peruana comprometida con acercar la mejor tecnología a hogares y empresas del país.</p>
+        <p class="page-hero-sub" data-aos="fade-down">Quiénes somos</p>
+        <h1 class="page-hero-title" data-aos="fade-up"><span class="gradient-text">Visión y Misión</span></h1>
+        <p class="page-hero-desc" style="margin: 0 auto;" data-aos="fade-up" data-aos-delay="100">Somos una empresa peruana comprometida con acercar la mejor tecnología a hogares y empresas del país.</p>
       </div>
     </section>
 
-    <section class="py-20">
-      <div class="container" style="max-width: 72rem;">
-        <div class="vm-grid">
-          <div class="vm-card">
-            <div class="vm-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="card-custom p-4 p-md-5 h-100">
+              <div class="vm-icon mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h2 class="font-display fw-bold fs-1 mb-3">Visión</h2>
+              <p class="text-secondary lh-lg">
+                Ser la empresa líder en la importación y comercialización de equipos de cómputo en el Perú,
+                reconocida por la calidad de sus productos, la excelencia en el servicio y su compromiso
+                con la transformación digital de miles de familias, profesionales y empresas.
+              </p>
             </div>
-            <h2 class="text-3xl font-display font-bold mb-4">Visión</h2>
-            <p class="text-muted-fg leading-relaxed">
-              Ser la empresa líder en la importación y comercialización de equipos de cómputo en el Perú,
-              reconocida por la calidad de sus productos, la excelencia en el servicio y su compromiso
-              con la transformación digital de miles de familias, profesionales y empresas.
-            </p>
           </div>
-          <div class="vm-card">
-            <div class="vm-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="card-custom p-4 p-md-5 h-100">
+              <div class="vm-icon mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+              </div>
+              <h2 class="font-display fw-bold fs-1 mb-3">Misión</h2>
+              <p class="text-secondary lh-lg">
+                Ofrecer computadoras, laptops y accesorios tecnológicos de las mejores marcas, a precios
+                competitivos y con garantía, brindando asesoría personalizada y soporte técnico oportuno
+                para que nuestros clientes cuenten siempre con la solución ideal para sus necesidades.
+              </p>
             </div>
-            <h2 class="text-3xl font-display font-bold mb-4">Misión</h2>
-            <p class="text-muted-fg leading-relaxed">
-              Ofrecer computadoras, laptops y accesorios tecnológicos de las mejores marcas, a precios
-              competitivos y con garantía, brindando asesoría personalizada y soporte técnico oportuno
-              para que nuestros clientes cuenten siempre con la solución ideal para sus necesidades.
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pb-24">
-      <div class="container" style="max-width: 72rem;">
-        <div class="text-center mb-12">
-          <div class="vm-icon" style="margin: 0 auto 1rem auto;">
+    <section class="pb-5" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-divider"></div>
+          <div class="vm-icon mx-auto mb-3">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
           </div>
-          <h2 class="text-4xl font-display font-bold">Nuestros Valores</h2>
+          <h2 class="font-display fw-bold display-6">Nuestros <span class="gradient-text">Valores</span></h2>
         </div>
-        <div class="values-grid">
-          <div class="value-card">
-            <h3 class="font-display font-semibold text-lg mb-2">Honestidad</h3>
-            <p class="text-sm text-muted-fg">Trato transparente en cada venta y asesoría.</p>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="value-card h-100">
+              <h3 class="font-display fw-semibold fs-5 mb-2">Honestidad</h3>
+              <p class="small text-secondary mb-0">Trato transparente en cada venta y asesoría.</p>
+            </div>
           </div>
-          <div class="value-card">
-            <h3 class="font-display font-semibold text-lg mb-2">Calidad</h3>
-            <p class="text-sm text-muted-fg">Productos originales de marcas reconocidas.</p>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-card h-100">
+              <h3 class="font-display fw-semibold fs-5 mb-2">Calidad</h3>
+              <p class="small text-secondary mb-0">Productos originales de marcas reconocidas.</p>
+            </div>
           </div>
-          <div class="value-card">
-            <h3 class="font-display font-semibold text-lg mb-2">Compromiso</h3>
-            <p class="text-sm text-muted-fg">Cumplimos con lo prometido a tiempo.</p>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-card h-100">
+              <h3 class="font-display fw-semibold fs-5 mb-2">Compromiso</h3>
+              <p class="small text-secondary mb-0">Cumplimos con lo prometido a tiempo.</p>
+            </div>
           </div>
-          <div class="value-card">
-            <h3 class="font-display font-semibold text-lg mb-2">Innovación</h3>
-            <p class="text-sm text-muted-fg">Siempre a la vanguardia tecnológica.</p>
+          <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="value-card h-100">
+              <h3 class="font-display fw-semibold fs-5 mb-2">Innovación</h3>
+              <p class="small text-secondary mb-0">Siempre a la vanguardia tecnológica.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand">
-          <div class="footer-brand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="footer-brand-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <div class="font-display font-bold">IMPORTACIONES MABEL E.I.R.L.</div>
+          <span class="fw-bold font-display">IMPORTACIONES MABEL E.I.R.L.</span>
+          <p class="footer-desc mt-2">Venta de computadoras, laptops y accesorios tecnológicos de las mejores marcas.</p>
         </div>
-        <p class="footer-desc">Venta de computadoras, laptops y accesorios tecnológicos de las mejores marcas.</p>
-      </div>
-      <div class="footer-contact">
-        <h4 class="footer-heading">Contacto</h4>
-        <p class="footer-contact-item">Jr. Leticia Nro. 948 Int. 5, Urb. Barrios Altos, Lima</p>
-        <p class="footer-contact-item center-items">(051) 981 412 732</p>
-        <p class="footer-contact-item center-items">ventas@importacionesmabel.pe</p>
-      </div>
-      <div>
-        <h4 class="footer-heading">Horario</h4>
-        <p class="footer-desc">Lunes a Sábado</p>
-        <p class="footer-desc">9:00 a.m. — 8:00 p.m.</p>
+        <div class="col-md-4">
+          <h5 class="fw-semibold font-display mb-3">Contacto</h5>
+          <div class="d-flex align-items-start gap-2 mb-2 footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-1"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Jr. Leticia Nro. 948 Int. 5, Urb. Barrios Altos, Lima</span>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-2 footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(051) 981 412 732</span>
+          </div>
+          <div class="d-flex align-items-center gap-2 footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>ventas@importacionesmabel.pe</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-semibold font-display mb-3">Horario</h5>
+          <p class="footer-desc mb-1">Lunes a Sábado</p>
+          <p class="footer-desc">9:00 a.m. — 8:00 p.m.</p>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">&copy; <span id="year"></span> Importaciones Mabel E.I.R.L. — Todos los derechos reservados.</div>
+    <div class="footer-bottom text-center py-3">
+      <small>&copy; <span id="year"></span> Importaciones Mabel E.I.R.L. — Todos los derechos reservados.</small>
+    </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
